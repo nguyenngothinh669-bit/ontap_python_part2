@@ -25,4 +25,4 @@ class Store:
                 self.performance_type = "Cao" 
                 
                 
-        
+            
