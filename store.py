@@ -11,10 +11,10 @@ class Store:
         self.calculate_net_revenue()
         self.classify_performance()
         
-        def calculate_net_revenue(self):
-            self.net_revenue = (self.revenue_day * self.open_days) + self.bonus 
+    def calculate_net_revenue(self):
+        self.net_revenue = (self.revenue_day * self.open_days) + self.bonus 
             
-        def classify_performance(self): 
+    def classify_performance(self): 
             if self.net_revenue < 9000000: 
                 self.performance_type = "Thấp"
             elif 9000000 <= self.net_revenue < 15000000: 
@@ -25,4 +25,3 @@ class Store:
                 self.performance_type = "Cao" 
                 
                 
-            

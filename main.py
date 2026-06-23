@@ -1,4 +1,7 @@
+from manager import StoreManager 
+
 def main(): 
+    manager = StoreManager()
     while True: 
         print("\n=================== MENU ===================")
         print("1.Hiển thị danh sách cửa hàng")
@@ -17,6 +20,8 @@ def main():
             continue 
         
         match choice:
+            case "1":
+                manager.show_data() 
             case "7": 
                 break  
             case _: 
