@@ -21,7 +21,17 @@ def main():
         
         match choice:
             case "1":
-                manager.show_data() 
+                manager.show_data()
+            case "2":
+                manager.add_store()
+            case "3": 
+                manager.update_store()
+            case "4": 
+                manager.delete_store() 
+            case "5": 
+                manager.search_store() 
+            case "6": 
+                manager.statistic()
             case "7": 
                 break  
             case _: 
